@@ -1,0 +1,19 @@
+body{
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: #212121;
+  font-family: 'Oswald', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style-type: none;
+}
+/* NAVBAR NAVBAR NAVBAR NAVBAR  */
+header{
+  position: fixed;
+  background-image: linear-gradient(black, white);
+  opacity: 0.2;
+}

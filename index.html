@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
   <link rel="stylesheet" href="main.css">
   <title>STEEL GYM & FITNESS</title>
 </head>
@@ -11,12 +12,12 @@
   <header>
     <nav>
       <ul>
-        <li></li>
-        <li>HOME</li>
-        <li>ABOUT</li>
-        <li>CLASSES</li>
-        <li>JOIN</li>
-        <li>CONTACT</li>
+        <li id="logo">STEEL GYM & FITNESS</li>
+        <li><a href="#landing">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#cards">CLASSES</a></li>
+        <li><a href="#membership-section">JOIN</a></li>
+        <li><a href="#contact">CONTACT</a></li>
       </ul>
     </nav>
   </header>
@@ -25,7 +26,7 @@
       <div id="l-content">
         <h1>STEEL GYM & FITNESS</h1>
         <h2>First class fitness in Devon</h2>
-        <a class="buttons" href="#">JOIN NOW</a>
+        <a class="buttons" href="#a-signup">JOIN NOW</a>
       </div>
     </section>
     <section id="phoneUs">
@@ -43,12 +44,12 @@
           <li>PERSONAL TRAINING</li>
           <li>UNLIMITED TRAINING</li>
         </ul>
-        <a class="buttons" href="#contact">Join Now</a>
+        <a class="buttons" href="#a-signup">Join Now</a>
       </div>
       <div id="a-signUp">
         <h3>FREE <span>ONE DAY</span> MEMBERSHIP</h3>
         <div id="trail-form">
-          <form action="/" method="POST">
+          <form id="one-day-contact" action="/" method="POST">
             <label for="first-name">FIRST NAME</label>
             <input type="text" name="first-name" required>
             <label for="last-name">LAST NAME</label>
@@ -149,6 +150,7 @@
       <div id="membership-cards">
         <div class="m-card-normal">
           <h3>day Pass</h3>
+          <p><span>£8</span>/Per Day</p>
           <p><i></i>Full Gym and Facilities Access</p>
           <p><i></i>Drop In Classes</p>
           <p><i></i>Gym Tour and Training Instruction</p>
@@ -157,6 +159,7 @@
         </div>
         <div id="m-card-special">
           <h3>One Off Payment</h3>
+          <p><span>£150</span>/Per Year</p>
           <p><i></i>Free Sign Up</p>
           <p><i></i>12 Months Membership</p>
           <p><i></i>Save 35% Per Year</p>
@@ -168,6 +171,7 @@
         </div>
         <div class="m-card-normal">
           <h3>Monthly</h3>
+          <p><span>£18</span>/Per Month</p>
           <p><i></i>Full Gym and Facilities Access</p>
           <p><i></i>Drop In Classes</p>
           <p><i></i>Gym Tour and Training Instruction</p>
@@ -182,12 +186,12 @@
           <h2>How To Sign Up</h2>
           <p>Signing up to the gym is as easy as visiting in person. We will give you a full tour, show you all the facilities and classes available, and answer any questions you might have. There is always a staff member available to help so just come visit to get started.</p>
           <br>
-          <p>Opening Hours:</p>
+          <p class="bold">Opening Hours:</p>
           <p>Mon-Fri: 6am - 10pm</p>
-          <p>Sat: 6pm - 8pm</p>
-          <p>Sun: 7:30am - 7:30pm</p>
+          <p>Sat: 7:30am - 8pm</p>
+          <p>Sun: 7:30am - 6pm</p>
           <br>
-          <p>Location</p>
+          <p class="bold">Location</p>
           <p>Steel Gym & Fitness</p>
           <p>Unit 6</p>
           <p>Newnham Industrial Estate</p>
@@ -200,9 +204,59 @@
 
       </div>
     </section>
+    <section class="social">
+      <div class="social-div">
+        <i></i>
+        <a href="https://www.facebook.com/" target="_blank">FACEBOOK</a>
+      </div>
+      <div class="social-div">
+        <i></i>
+        <a href="https://www.instagram.com/" target="_blank">INSTAGRAM</a>
+      </div>
+      <div class="social-div">
+        <i></i>
+        <a href="https://www.youtube.com/" target="_blank">YOUTUBE</a>
+      </div>
+    </section>
+    <section id="contact">
+      <div id="contact-info">
+        <h3>Contact Us</h3>
+        <p>Feel free to call us right away if you need us: 01256 722522</p>
+        <p>If you wish to email instead please use the contact form provided.</p>
+        <p>We'll get back to you as soon as we can.</p>
+      </div>
+      <div id="contact-form">
+        <form id="contact" action="/" method="post">
+          <input type="text" name="first-name" value="" placeholder="First Name*" required>
+          <input type="text" name="last-name" value=""  placeholder="Last Name*" required>
+          <input type="email" name="first-name" value=""  placeholder="Email*"required>
+          <select name="where" id="dropdown" required>
+            <option hidden>How'd You Find Us?</option>
+            <option value="Google">Google</option>
+            <option value="Facebook">Facebook</option>
+            <option value="Instagram">Instagram</option>
+            <option value="Youtube">Youtube</option>
+            <option value="Friends">Friends</option>
+            <option value="Other">Other</option>
+          </select>
+          <textarea name="message" rows="8" cols="80" placeholder="Message*"></textarea>
+          <button type="submit">SEND</button>
+        </form>
+      </div>
+    </section>
   </main>
   <footer>
-
+    <h3>Steel Gym & Fitness</h3>
+    <p>Unit 6</p>
+    <p>Newnham Industrial Estate</p>
+    <p>Plympton</p>
+    <p>Devon</p>
+    <p>PL7 6BU</p>
+    <br>
+    <p><a href="https://www.google.com/maps">MAPS</a> | <a href="htts://www.facebook.com">FACEBOOK</a></p>
+    <br>
+    <p>&copy;Steel Gym & Fitness 2019</p>
+    <p>All Rights Reseved.</p>
   </footer>
 </body>
 </html>
