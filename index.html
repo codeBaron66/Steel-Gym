@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="main.css">
   <title>STEEL GYM & FITNESS</title>
 </head>
@@ -17,6 +18,7 @@
         <li><a href="#cards">CLASSES</a></li>
         <li><a href="#membership-section">JOIN</a></li>
         <li><a href="#contact">CONTACT</a></li>
+        <li><a class="buttons" href="#a-signup">JOIN NOW</a></li>
       </ul>
     </nav>
   </header>
@@ -24,11 +26,10 @@
     <section id="landing">
       <div id="l-content">
         <h1><span>STEEL GYM</span> & FITNESS</h1>
-        <h2>First class fitness in Devon</h2>
+        <h2>First Class Fitness in Devon</h2>
         <a class="buttons" href="#a-signup">JOIN NOW</a>
       </div>
       <ul class="slideshow">
-        <li></li>
         <li></li>
         <li></li>
         <li></li>
@@ -37,37 +38,44 @@
     </section>
     <section id="phoneUs">
       <h2>Call Us Today To Get Started!</h2>
-      <p><i></i><a href="#">01256 722522</a></p>
+      <p><i class="fas fa-phone fa-2x"></i><a href="#">01256 722522</a></p>
     </section>
     <section id="about">
-      <div id="a-content">
-        <h2>STEEL GYM & <span>FITNESS</span></h2>
-        <p>Established in 1992, Steel Gym & fitness is the Longest Running Gym in the County! It is currently owned and operated since 2005 by Phil DeCresto, former Mr Universe competitor, equipment specialist, bodybuilding historian, and holder of 9 personal training certifications including NASM, and Resistance Training Specialist Levels 1 & 2. This summer marks his 28th year in business!</p>
-        <ul>
-          <li>STRENGTH TRAINING</li>
-          <li>CARDIO</li>
-          <li>STRETCHING</li>
-          <li>PERSONAL TRAINING</li>
-          <li>UNLIMITED TRAINING</li>
-        </ul>
-        <a class="buttons" href="#a-signup">Join Now</a>
-      </div>
-      <div id="a-signUp">
-        <h3>FREE <span>ONE DAY</span> MEMBERSHIP</h3>
-        <div id="trail-form">
-          <form id="one-day-contact" action="/" method="POST">
-            <label for="first-name">FIRST NAME</label>
-            <input type="text" name="first-name" required>
-            <label for="last-name">LAST NAME</label>
-            <input type="text" name="last-name" required>
-            <label for="phone">PHONE</label>
-            <input type="text" name="phone">
-            <label for="email">EMAIL</label>
-            <input type="email" name="email" required>
-            <button type="submit">Submit</button>
-          </form>
+      <div id="a-wrapper">
+        <div id="a-content">
+          <h1><span>STEEL GYM</span> & FITNESS</h1>
+          <p>Established in 1992, Steel Gym & fitness is the Longest Running Gym in the County! It is currently owned and operated since 2005 by Phil DeCresto, former Mr Universe competitor, equipment specialist, bodybuilding historian, and holder of 9 personal training certifications including NASM, and Resistance Training Specialist Levels 1 & 2. This summer marks his 28th year in business!</p>
+          <ul>
+            <li><span id="numbers">1</span>STRENGTH TRAINING</li>
+            <li><span id="numbers">2</span>CARDIO</li>
+            <li><span id="numbers">3</span>STRETCHING</li>
+            <li><span id="numbers">4</span>PERSONAL TRAINING</li>
+            <li><span id="numbers">5</span>UNLIMITED TRAINING</li>
+          </ul>
+          <div id="divide"></div>
+          <a class="buttons" href="#a-signup">Join Now</a>
         </div>
-        <p>By clicking "Submit", you agree to receive promotional material from Steel Gym & Fitness with the option to opt out.</p>
+        <div id="a-signUp">
+          <div id="form-wrapper">
+            <h2>FREE <span>ONE DAY</span> TRAIL MEMBERSHIP</h2>
+            <form id="one-day-contact" action="/" method="POST">
+              <div id="form-content">
+                <label for="first-name">FIRST NAME</label>
+                <input type="text" name="first-name" required>
+                <label for="last-name">LAST NAME</label>
+                <input type="text" name="last-name" required>
+                <label for="phone">PHONE</label>
+                <input type="text" name="phone">
+                <label id="last-label" for="email">EMAIL</label>
+                <input id="last-input" type="email" name="email" required>
+              </div>
+              <div id="submitBtn">
+                <button type="submit">Submit</button>
+              </div>
+            </form>
+            <p>By clicking "Submit", you agree to receive promotional material from Steel Gym & Fitness with the option to opt out.</p>
+          </div>
+        </div>
       </div>
     </section>
     <section id="cards"> <!--have to style with grid-->
