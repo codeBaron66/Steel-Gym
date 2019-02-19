@@ -15,7 +15,8 @@ li{
 .buttons{
   color: white;
   letter-spacing: 1px;
-  background-image: linear-gradient(#ff8f33, #ff7200); padding: 10px 20px;
+  background-image: linear-gradient(#ff8f33, #ff7200);
+  padding: 10px 20px;
   border-radius: 20px;
 }
 /* NAVBAR NAVBAR NAVBAR NAVBAR  */
@@ -212,10 +213,10 @@ nav ul li a {
   border-top-right-radius: 10px;
   padding-left: 10px;
 }
-#one-day-contact label:nth-child(2){
+/* #one-day-contact label:nth-child(2){
   border-bottom: 1px solid green;
   color: green;
-}
+} */
 #last-input{
   border-bottom: none;
   color: pink;
@@ -321,4 +322,210 @@ nav ul li a {
   width: 100%;
   margin: 0;
   padding: 0;
+}
+/* MEMBERSHIP MEMBERSHIP MEMBERSHIP MEMBERSHIP */
+#membership-section{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-image: radial-gradient(circle, #024864, #212121);
+}
+#membership-section h2{
+  font-size: 3rem;
+  margin: 0 0 10px 0;
+  letter-spacing: 1px;
+}
+#m-h3{
+  margin-bottom: 60px;
+}
+#membership-cards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 1000px; */
+  margin: 0 auto;
+}
+.m-card{
+  color: black;
+  background-color: white;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  margin: 0 7px;
+}
+.m-card h3{
+  margin: 0;
+  padding: 20px 0;
+}
+.m-card-normal .card-head{
+  font-size: 1.2rem;
+  background-image: linear-gradient(#e6e6e6, #d9d9d9);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.m-card-special .card-head{
+  font-size: 1.2rem;
+  background-image: linear-gradient(#81dafd, #4fcbfc);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.card-body{
+  padding: 15px 40px 30px 40px;
+}
+.card-body span{
+  font-size: 3rem;
+  color: black;
+}
+.card-body p{
+  color: #404040;
+}
+.card-body i{
+  padding-right: 5px;
+  color: #404040;
+}
+#strike{
+  text-decoration: line-through;
+}
+.special-btn{
+  background-image: linear-gradient(#81dafd, #4fcbfc);
+  color: black;
+}
+/* SOCIAL LINKS SOCIAL LINKS SOCIAL LINKS  */
+#social{
+  font-size: 3rem;
+  background-color: white;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-div{
+  width: 30%;
+  text-align: center;
+}
+#social a{
+  color: black;
+}
+/* FIND US FIND US FIND US FIND US  */
+#find-us{
+  color: white;
+  background-color: black;
+  height: 60vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#find-info{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#find-content{
+  width: 40%;
+  padding-right: 50px;
+}
+#find-content h2{
+  font-size: 1rem;
+}
+#find-content h3{
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+#find-content p{
+  color: #d9d9d9;
+  font-size: 0.9rem;
+  margin: 0;
+  letter-spacing: 0.6px;
+}
+#map{
+  background-color: white;
+  height: inherit;
+}
+/* CONTACT CONTACT CONTACT CONTACT  */
+#contact{
+  color: black;
+  height: 60vh;
+  background-color: #e6ecff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contact-info{
+  width: 300px;
+}
+#contact-info span{
+  text-decoration: underline;
+}
+#contact-form{
+  width: 600px;
+}
+#contactt{
+  display: flex;
+  flex-direction: column;
+}
+#contact-form-content{
+  width: 600px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-content: center;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+#contact-form-content input{
+  box-shadow: none;
+  padding-left: 12px;
+  color: black;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: #D9E2FA;
+}
+#contact-box textarea{
+  box-shadow: none;
+  padding-left: 12px;
+  display: block;
+  color: black;
+  padding-top: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #D9E2FA;
+  width: 100%;
+  margin-top: 10px;
+}
+#contact-form-content select{
+  box-shadow: none;
+  padding-left: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #D9E2FA;
+}
+::placeholder{
+  /* padding: 20px; */
+  /* color: blue; */
+}
+#contactt button{
+  color: black;
+  background-color: #D9E2FA;
+  letter-spacing: 1px;
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: 2px solid #26befc;
+  border-radius: 20px;
+  cursor: pointer;
+}
+/* FOOTER FOOTER FOOTER FOOTER  */
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer p{
+  margin: 0;
+  color: color: #404040;
+}
+#footerDiv{
+  letter-spacing: 1px;
+  padding: 10px 0;
 }
