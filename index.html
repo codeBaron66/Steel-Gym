@@ -11,16 +11,21 @@
 </head>
 <body>
   <header>
-    <nav>
-      <ul>
-        <li id="logo"><a href="#landing"><span>STEEL GYM</span> & FITNESS</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#cards">CLASSES</a></li>
-        <li><a href="#membership-section">JOIN</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-        <li><a class="buttons" href="#a-signup">JOIN NOW</a></li>
-      </ul>
-    </nav>
+    <div id="logo"><a href="#landing"><span>STEEL GYM</span> & FITNESS</a></div>
+    <div class="nav">
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle"/>
+        <div class="menu">
+          <ul>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#cards">CLASSES</a></li>
+            <li><a href="#membership-section">JOIN</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li><a id="hidden-menu" href="#contact">JOIN NOW</a></li>
+            <li><a id="hide" class="buttons" href="#a-signup">JOIN NOW</a></li>
+          </ul>
+        </div>
+    </div>
   </header>
   <main>
     <section id="landing">
@@ -36,11 +41,11 @@
         <li></li>
       </ul>
     </section>
-    <section id="phoneUs">
+    <!-- <section id="phoneUs">
       <h2>Call Us Today To Get Started!</h2>
       <p><i class="fas fa-phone fa-2x"></i><a href="#">01256 722522</a></p>
-    </section>
-    <section id="about">
+    </section> -->
+    <!-- <section id="about">
       <div id="a-wrapper">
         <div id="a-content">
           <h1><span>STEEL GYM</span> & FITNESS</h1>
@@ -104,7 +109,7 @@
     </section>
     <section id="strength" class="info-section">
       <!-- <h2>Strength and Conditioning</h2> -->
-      <div class="info-wrapper">
+      <!-- <div class="info-wrapper">
         <div class="info-section-L">
           <h4>Dedicated Lifting Area</h4>
           <p>We have an extensive lifting and weights area including free weights, squat racks, and dedicated lift machines.</p>
@@ -135,7 +140,7 @@
     <section id="beauty" class="info-section">
       <div class="info-wrapper">
         <!-- <h2>Fitness and Beauty</h2> -->
-        <div class="info-section-L">
+        <!-- <div class="info-section-L">
           <h4>Classes and Fitness Sessions</h4>
           <p>Drop in or follow along with our fitness classes: TRX, Spinning, Zumba, Crossfit, Body Jump, Dancing, Yoga, and more.</p>
           <h4>Full Cardio and Core Area</h4>
@@ -169,7 +174,7 @@
             <p><i class="fas fa-check"></i>Full Gym and Facilities Access</p>
             <p><i class="fas fa-check"></i>Drop In Classes</p>
             <p><i class="fas fa-check"></i>Gym Tour and Training Instruction</p>
-            <p id="strike">Gym Membership</p> <!--do a strike through-->
+            <p id="strike">Gym Membership</p>
             <a href="#" class="buttons">TRY TODAY</a>
           </div>
         </div>
@@ -285,6 +290,6 @@
     </div>
     <p>&copy;Steel Gym & Fitness 2019</p>
     <p>All Rights Reseved.</p>
-  </footer>
+  </footer> -->
 </body>
 </html>
