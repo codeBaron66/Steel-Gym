@@ -4,6 +4,7 @@ body{
   color: #fff;
   background-color: #212121;
   font-family: 'Oswald', sans-serif;
+  box-sizing: border-box;
 }
 a{
   text-decoration: none;
@@ -311,7 +312,7 @@ header{
 }
 /* INFO SECTION INFO SECTION INFO SECTION  */
 .info-section{
-  min-height: 70vh;
+  height: 70vh;
   color: black;
   background-color: #ffffff;
   display: flex;
@@ -320,7 +321,6 @@ header{
   flex-direction: column;
 }
 .info-wrapper{
-  width: 1000px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -532,10 +532,6 @@ header{
   border-radius: 5px;
   background-color: #D9E2FA;
 }
-::placeholder{
-  /* padding: 20px; */
-  /* color: blue; */
-}
 #contactt button{
   color: black;
   background-color: #D9E2FA;
@@ -562,7 +558,7 @@ footer p{
   padding: 10px 0;
 }
 /* MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES  */
-@media only screen and (max-width: 1060px) {
+@media only screen and (max-width: 1180px) {
     .nav label {
       display: block;
       line-height: 70px;
@@ -606,6 +602,10 @@ footer p{
     }
     #a-content h1{
       line-height: 60px;
+      text-align: center;
+    }
+    #a-content p{
+      text-align: center;
     }
     #form-wrapper{
       margin: 130px 0 0 0px;
@@ -627,19 +627,51 @@ footer p{
       grid-area: d;
     }
     #cards{
-      min-height: 200vh;
+      height: 250vh;
       grid-template-areas:
         'b'
         'a'
         'c'
         'd';
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
+      /* grid-template-rows: 1fr 1fr 1fr 1fr; */
     }
     .card{
       text-align: center;
       max-width: 100%;
+      min-height: 60vh;
     }
+    .info-section-L,
+    .info-section-R{
+      width: 250px;
+    }
+    .info-pic{
+      width: 280px;
+    }
+    .info-pics{
+      height: 700px;
+      grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 880px) {
+  .info-section{
+    height: auto;
+  }
+  .info-wrapper{
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+  }
+  .info-section-L,
+  .info-section-R{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .info-pic-div{
+    display: flex;
+    justify-content: center;
+  }
 }
 @media only screen and (max-width: 500px) {
   #a-content h1{
