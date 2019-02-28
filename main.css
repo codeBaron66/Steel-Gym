@@ -216,6 +216,10 @@ header{
   width: 100%;
   margin-bottom: 40px;
 }
+#a-join{
+  margin-bottom: 100px;
+  /* display: block; */
+}
 #form-wrapper{
   width: 400px;
   margin: 230px auto;
@@ -377,8 +381,6 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
-  /* width: 1000px; */
-  margin: 0 auto;
 }
 .m-card{
   color: black;
@@ -406,7 +408,7 @@ header{
 .card-body{
   padding: 15px 40px 30px 40px;
 }
-.card-body span{
+.price{
   font-size: 3rem;
   color: black;
 }
@@ -649,8 +651,11 @@ footer p{
       width: 280px;
     }
     .info-pics{
-      height: 700px;
+      height: 500px;
       grid-template-columns: 1fr 1fr;
+    }
+    .info-pics img{
+      height: 250px;
     }
 }
 @media only screen and (max-width: 880px) {
@@ -659,7 +664,6 @@ footer p{
   }
   .info-wrapper{
     grid-template-columns: 1fr;
-    /* grid-template-rows: 1fr 1fr 1fr; */
   }
   .info-section-L,
   .info-section-R{
@@ -671,6 +675,23 @@ footer p{
   .info-pic-div{
     display: flex;
     justify-content: center;
+  }
+  #membership-cards{
+    flex-direction: column;
+  }
+  #membership-section h2{
+    margin-top: 100px;
+  }
+  .m-card{
+    width: 90vw;
+    margin-bottom: 30px;
+  }
+  #social{
+    flex-direction: column;
+    min-height: 50vh;
+  }
+  .social-div{
+    margin-bottom: 30px;
   }
 }
 @media only screen and (max-width: 500px) {
