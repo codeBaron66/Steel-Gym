@@ -446,7 +446,7 @@ header{
 #find-us{
   color: white;
   background-color: black;
-  height: 60vh;
+  height: 70vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -456,7 +456,8 @@ header{
   align-items: center;
 }
 #find-content{
-  width: 40%;
+  width: 60%;
+  height: 100%;
   padding-right: 50px;
 }
 #find-content h2{
@@ -636,7 +637,6 @@ footer p{
         'c'
         'd';
       grid-template-columns: 1fr;
-      /* grid-template-rows: 1fr 1fr 1fr 1fr; */
     }
     .card{
       text-align: center;
@@ -692,6 +692,27 @@ footer p{
   }
   .social-div{
     margin-bottom: 30px;
+  }
+  #find-us{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'map'
+      'find-content';
+  }
+  #find-info{
+    justify-content: center;
+  }
+  #find-content{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 0;
+    grid-area: find-content;
+  }
+  #map{
+    grid-area: map;
   }
 }
 @media only screen and (max-width: 500px) {
