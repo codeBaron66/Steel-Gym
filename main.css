@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body{
   margin: 0;
   padding: 0;
@@ -457,7 +460,7 @@ header{
 }
 #find-content{
   width: 60%;
-  height: 100%;
+  height: 70vh;
   padding-right: 50px;
 }
 #find-content h2{
@@ -474,8 +477,8 @@ header{
   letter-spacing: 0.6px;
 }
 #map{
-  background-color: white;
-  height: inherit;
+  background-color: pink;
+  height: 70vh;
 }
 /* CONTACT CONTACT CONTACT CONTACT  */
 #contact{
@@ -488,6 +491,7 @@ header{
 }
 #contact-info{
   width: 300px;
+  margin-right: 20px;
 }
 #contact-info span{
   text-decoration: underline;
@@ -551,6 +555,7 @@ footer{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+    padding-bottom: 20px;
 }
 footer p{
   margin: 0;
@@ -657,6 +662,13 @@ footer p{
     .info-pics img{
       height: 250px;
     }
+    #contact{
+      flex-direction: column;
+    }
+    #contact-info{
+      width: 50%;
+      text-align: center;
+    }
 }
 @media only screen and (max-width: 880px) {
   .info-section{
@@ -698,6 +710,7 @@ footer p{
     grid-template-areas:
       'map'
       'find-content';
+    height: 140vh;
   }
   #find-info{
     justify-content: center;
@@ -713,6 +726,41 @@ footer p{
   }
   #map{
     grid-area: map;
+  }
+  #contact{
+    height: 100vh;
+  }
+  #contact-form{
+    width: 70%;
+  }
+  #contact-info{
+    padding-top: 30px;
+  }
+  #contactt{
+    width: 100%;
+  }
+  #contact-form-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+  }
+  #contact-form-content input{
+    width: 100%;
+    margin-top: 10px;
+  }
+  #contact-box textarea{
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  #contact-form-content select{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+  }
+  #contactt button{
+    margin-top: 15px;
+    margin-bottom: 30px;
   }
 }
 @media only screen and (max-width: 500px) {

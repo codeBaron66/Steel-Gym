@@ -247,7 +247,7 @@
 
       </div>
     </section>
-    <!--<section id="contact">
+    <section id="contact">
       <div id="contact-info">
         <h3>Contact Us</h3>
         <p>Feel free to call us right away if you need us: <span>01256 722522</span></p>
@@ -292,6 +292,24 @@
     </div>
     <p>&copy;Steel Gym & Fitness 2019</p>
     <p>All Rights Reseved.</p>
-  </footer> -->
+  </footer>
 </body>
+<script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: 50.395582, lng: -4.045306};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 14, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=
+AIzaSyDKLAhnOOlb5DjsdJhQ4BlVh6xyMFgkkuQ
+&callback=initMap">
+    </script>
+
 </html>
